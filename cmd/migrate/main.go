@@ -47,5 +47,7 @@ func main() {
 		if err := m.Down(); err != nil && err != migrate.ErrNoChange {
 			log.Fatal(err)
 		}
+	default:
+		log.Fatal("Please provide a migration direction: 'up' or 'down'")
 	}
 }
