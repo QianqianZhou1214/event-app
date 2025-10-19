@@ -2,6 +2,7 @@ package main
 
 import (
 	"event-app/internal/database"
+	"fmt"
 	"net/http"
 	"strconv"
 
@@ -19,6 +20,7 @@ func (app *application) createEvent(c *gin.Context) {
 	err := app.models.Events.Insert(&event)
 
 	if err != nil {
+		fmt.Println(err)
 		c.JSON(http.StatusInternalServerError, gin.H{"error": "Failed to create event"})
 		return
 	}
