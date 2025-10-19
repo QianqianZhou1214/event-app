@@ -2,7 +2,7 @@
 
 REST API built with Go and Gin framework for event management with user authentication.  
 
-## Development Setup 。
+## Development Setup  
 
 This project uses Air for live reload during development. Here's how to get started:
 
