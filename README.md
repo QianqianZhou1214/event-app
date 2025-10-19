@@ -1,6 +1,6 @@
 # Event App
 
-# REST API built with Go and Gin framework for event management with user authentication.  
+REST API built with Go and Gin framework for event management with user authentication.  
 
 ## Development Setup 。
 
